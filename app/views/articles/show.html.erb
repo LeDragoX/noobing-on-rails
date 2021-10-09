@@ -8,3 +8,29 @@
                     method: :delete,
                     data: { confirm: "Are you sure you want to delete '#{@article.title}' article? " } %></li>
 </ul>
+
+<h2>Comments</h2>
+<% @article.comments.each do |c| %>
+    <p>
+        <strong>Commenter:</strong>
+        <%= c.commenter %>
+    </p>
+
+    <p>
+        <strong>Comment:</strong>
+        <%= c.body %>
+    </p>
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_with model: [ @article, @article.comments.build ] do |f| %>
+    <p>
+        <%= f.label :commenter %>
+        <%= f.text_field :commenter %>
+    </p>
+    <p>
+        <%= f.label :body %>
+        <%= f.text_area :body %>
+    </p>
+    <p><%= f.submit %></p>
+<% end %>
