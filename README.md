@@ -36,15 +36,13 @@ bundle install
 ## Database initialization
 
 ```sh
-rails db:migrate # Soon...
-rails db:seed # Soon...
+rails db:migrate
+rails db:seed
 ```
 
 ## How to run the test suite
 
-```sh
-rspec # Soon...
-```
+> No tests at all...
 
 ## Services (job queues, cache servers, search engines, etc.)
 
