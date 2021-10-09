@@ -1,0 +1,12 @@
+<header>
+    <h1>Articles</h1>
+</header>
+<main>
+    <ul>
+        <% @articles.each do |a| %>
+            <li>
+                <%= a.title %>
+            </li>
+        <% end %>
+    </ul>
+</main>

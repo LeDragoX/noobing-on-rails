@@ -1,24 +1,57 @@
-# README
+# Blog (Rails Guides)
+
+Creating a blog following the Getting Started guide: https://guides.rubyonrails.org/getting_started.html
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+## Project Started
 
-* System dependencies
+```sh
+# Don't run this command
+╰─❯ rails new noobing-on-rails
+```
 
-* Configuration
+## Ruby version
 
-* Database creation
+- Ruby v3.0.2 | Rails >= 6.1.4.1
 
-* Database initialization
+## System dependencies
 
-* How to run the test suite
+- Make sure [_Yarn_](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) is installed;
+- All Rails stuff;
 
-* Services (job queues, cache servers, search engines, etc.)
+## Configuration
 
-* Deployment instructions
+```sh
+bundle install
+```
 
-* ...
+## Database creation
+
+> No need.
+
+## Database initialization
+
+```sh
+rails db:migrate # Soon...
+rails db:seed # Soon...
+```
+
+## How to run the test suite
+
+```sh
+rspec # Soon...
+```
+
+## Services (job queues, cache servers, search engines, etc.)
+
+> ...
+
+## Deployment instructions
+
+```sh
+rails server
+```
