@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-article = Article.create!(title: "Hello Rails", body: "I am on Rails!")
+article = Article.create!(title: "Hello Rails", body: "I am on Rails!", status: "public")
+comment = Comment.create!(commenter: "Crash", body: "I'll crush u", status: "public",
+                          article: article)
